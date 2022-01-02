@@ -7,6 +7,7 @@ Minecraft version 1.16+
 ## Features
 - Timer
 - Portal Selection Menu
+- Fully Customizable Loadouts
 - Randomizable Portals
 - Enable / Disabled Individual Portals from Randomizer
 
