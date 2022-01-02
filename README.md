@@ -11,6 +11,7 @@ Minecraft version 1.16+
 - Multiple Variants for Each Portal
 - Randomizable Portals
 - Enable / Disabled Individual Portals and Variants from Randomizer
+- Editig Mode for Custom Structures
 
 ## Planned Features
 - Personal Bests
