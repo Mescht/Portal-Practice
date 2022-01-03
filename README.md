@@ -13,4 +13,4 @@ Minecraft version 1.16+
 - Enable / Disabled Individual Portals and Variants from Randomizer
 - Editig Mode for Custom Structures
 - Personal Bests
-- Randomized Crying Obsidian for Ruined Portals
+- Randomizable Crying Obsidian for Ruined Portals
