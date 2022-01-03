@@ -9,7 +9,8 @@ Minecraft version 1.16+
 - Selection Menu
 - Fully Customizable Loadouts
 - Multiple Variants for Each Portal
-- Randomizable Portals
+- Randomizer Mode
 - Enable / Disabled Individual Portals and Variants from Randomizer
 - Editig Mode for Custom Structures
 - Personal Bests
+- Randomized Crying Obsidian for Ruined Portals
