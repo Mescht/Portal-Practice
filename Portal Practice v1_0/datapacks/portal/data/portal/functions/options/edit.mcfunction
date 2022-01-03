@@ -1,0 +1,5 @@
+#tellraw @a {"text":"\nEdit at own risk\n","color":"red"}
+gamemode creative @a
+clear @a
+
+tellraw @a [{"text":"[Save Temporarily]","color":"green","clickEvent":{"action":"run_command","value":"/function portal:options/edit_save_temporarily"},"hoverEvent":{"action":"show_text","contents":[{"text":"Changes will be lost when exiting the world"}]}},{"text":"   [Save Permanently]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function portal:options/edit_save_permanent"},"hoverEvent":{"action":"show_text","contents":[{"text":"Changes will be saved premanently"},{"text":"\nUse at own risk","color":"red"}]}},{"text":"   [Cancel]","color":"red","clickEvent":{"action":"run_command","value":"/function portal:reset"},"hoverEvent":{"action":"show_text","contents":[{"text":"Exit editing mode"}]}}]

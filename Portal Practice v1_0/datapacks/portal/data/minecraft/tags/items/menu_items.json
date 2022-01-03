@@ -1,0 +1,21 @@
+{
+    "values":[
+        "minecraft:nether_star",
+        "minecraft:glowstone_dust",
+        "minecraft:gunpowder",
+        "minecraft:grass_block",
+        "minecraft:magma_block",
+        "minecraft:netherrack",
+        "minecraft:sand",
+        "minecraft:furnace",
+        "minecraft:stone",
+        "minecraft:gold_block",
+        "minecraft:gold_ore",
+        "minecraft:mossy_stone_bricks",
+        "minecraft:paper",
+        "minecraft:writable_book",
+        "minecraft:emerald_block",
+        "minecraft:diamond_block",
+        "minecraft:crying_obsidian"
+    ]
+}
