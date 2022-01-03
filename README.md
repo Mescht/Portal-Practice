@@ -14,3 +14,6 @@ Minecraft version 1.16+
 - Editig Mode for Custom Structures
 - Personal Bests
 - Randomizable Crying Obsidian for Ruined Portals
+
+## Knowen Issues
+- lighting issues when not using night vision
