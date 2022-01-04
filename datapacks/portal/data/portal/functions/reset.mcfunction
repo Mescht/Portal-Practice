@@ -9,6 +9,7 @@ scoreboard players reset @p death
 
 # clear level
 fill 10 17 30 -10 48 50 air
+execute positioned 0.5 33 40.5 run kill @e[type=!player,distance=..15]
 
 # set structure block to load mode
 data modify block 0 32 29 mode set value "LOAD"
