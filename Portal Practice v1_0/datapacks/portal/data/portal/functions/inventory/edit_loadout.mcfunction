@@ -8,3 +8,5 @@ data merge block 2 33 0 {Text2:'{"text":"Save Loadout","color":"green","clickEve
 scoreboard players set editing_loadout vars 1
 
 gamemode creative @a
+
+execute as @a at @s run playsound minecraft:ui.button.click master @a ~ ~ ~ 1 1

@@ -13,7 +13,7 @@ function portal:gui/level_settings/populate_rec
 setblock 0 0 0 air
 
 # add crying button if ruind portal level is selected
-execute if score current_level vars matches 6 run function portal:gui/level_settings/populate_crying
+execute if score current_level vars matches 6 if score random_levels vars matches 0 run function portal:gui/level_settings/populate_crying
 
 # add return button
 data modify storage portal:gui settings append value {id:"minecraft:nether_star",Count:1b,Slot:26s,tag:{index:26b,display:{Name:'{"text":"Main Menu","italic":"false","color":"yellow"}'}}}

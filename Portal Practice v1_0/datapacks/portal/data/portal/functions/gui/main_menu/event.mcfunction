@@ -1,6 +1,8 @@
 # store loadout if player was in editing mode
 execute if score editing_loadout vars matches 1 run function portal:inventory/save_loadout
 
+execute as @a at @s run playsound minecraft:ui.button.click master @a ~ ~ ~ 1 1
+
 # remove entchantment glit from all itmes
 execute unless score index gui matches 26 run data remove storage portal:gui main_menu[].tag.Enchantments
 

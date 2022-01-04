@@ -10,3 +10,5 @@ scoreboard players set editing_loadout vars 0
 clear @a
 gamemode survival @a
 function portal:select_level
+
+execute as @a at @s run playsound minecraft:ui.button.click master @a ~ ~ ~ 1 1

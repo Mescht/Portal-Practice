@@ -7,3 +7,5 @@ execute if score index gui matches 26 run function portal:gui/main_menu/load
 
 execute if score index gui matches ..25 run function portal:gui/level_settings/load
 
+execute as @a at @s run playsound minecraft:ui.button.click master @a ~ ~ ~ 1 1
+
