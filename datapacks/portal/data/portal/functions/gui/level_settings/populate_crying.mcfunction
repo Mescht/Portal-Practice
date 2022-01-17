@@ -1,5 +1,5 @@
 # add crying button
-data modify storage portal:gui settings append value {id:"minecraft:crying_obsidian",Count:1b,Slot:18s,tag:{index:25b,display:{Name:'{"text":"Crying Obsidian","italic":"false","color":"yellow"}'}}}
+data modify storage portal:gui settings append value {id:"minecraft:crying_obsidian",Count:1b,Slot:18s,tag:{index:25b,display:{Name:'{"text":"Random Crying Obsidian","italic":"false","color":"yellow"}'}}}
 
 # check if crying is set
 execute store result score disabled filter run data get storage portal:levels levels[{selected:1b}].crying

@@ -20,6 +20,7 @@ setblock 0 31 29 minecraft:air
 
 # randomize crying obsidian if enabled
 execute if data storage portal:levels levels[{selected:1b}].crying run function portal:random/crying_obsidian
+execute if data storage portal:levels levels[{selected:1b}].magma run function portal:random/magma_block
 
 # janky fix cause water spreads to waterloggable blocks in pre 1.16.3 when structure loads
 fill 10 17 30 -10 48 50 water replace blue_stained_glass
