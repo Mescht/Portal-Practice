@@ -1,0 +1,11 @@
+
+/advancements
+data/raids.dat
+/DIM-1
+/DIM1
+/playerdata
+/stats
+level.dat_old
+make_release.py
+/.releases
+session.lock

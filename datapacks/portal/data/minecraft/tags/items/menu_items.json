@@ -14,8 +14,9 @@
         "minecraft:mossy_stone_bricks",
         "minecraft:paper",
         "minecraft:writable_book",
-        "minecraft:emerald_block",
-        "minecraft:diamond_block",
-        "minecraft:crying_obsidian"
+        "minecraft:iron_pickaxe",
+        "minecraft:netherite_scrap",
+        "minecraft:crying_obsidian",
+        "minecraft:lava_bucket"
     ]
 }

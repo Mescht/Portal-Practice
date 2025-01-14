@@ -1,0 +1,1 @@
+execute unless score in_portal_time vars matches -1 run function portal:portalbreak/failed_early_3

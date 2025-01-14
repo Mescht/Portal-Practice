@@ -18,6 +18,8 @@ execute if score index gui matches 7 run data modify storage portal:gui main_men
 execute if score index gui matches 8 run data modify storage portal:gui main_menu[{tag:{index:8b}}] merge value {tag:{Enchantments:[{}]}}
 execute if score index gui matches 9 run data modify storage portal:gui main_menu[{tag:{index:9b}}] merge value {tag:{Enchantments:[{}]}}
 
+execute if score index gui matches 10 run data modify storage portal:gui main_menu[{tag:{index:10b}}] merge value {tag:{Enchantments:[{}]}}
+
 execute if score index gui matches 25 run data modify storage portal:gui main_menu[{tag:{index:25b}}] merge value {tag:{Enchantments:[{}]}}
 
 # set current level to selected index

@@ -9,3 +9,8 @@ execute if score random_structures vars matches 1 run function portal:random/ran
 
 # copy selected structure to sturcture block
 function portal:filter/select_structure_init
+
+# mirror ruined portal
+data merge block 0 15 29 {mirror:"NONE",posX:-10}
+
+execute if data storage portal:filter output[{selected:1b}].mirror run function portal:random/mirror_structure
