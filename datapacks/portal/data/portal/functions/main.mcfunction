@@ -15,7 +15,8 @@ execute in overworld as @a[distance=0..] if score in_portal vars matches 0 if sc
 execute if score in_portal vars matches 1 run scoreboard players add in_portal_time vars 1
 execute if score in_portal vars matches 0 run scoreboard players reset in_portal_time vars
 
-execute in minecraft:the_end as @a[distance=0..] in minecraft:overworld run function portal:finish
+execute in minecraft:the_end as @a[distance=0..] if score timer timer matches 20.. in minecraft:overworld run function portal:finish
+execute in minecraft:the_end run kill @e[distance=0..]
 
 execute if score in_lobby vars matches 1 run scoreboard players set @a reset 0
 execute if score in_lobby vars matches 1 run scoreboard players set @a skip 0

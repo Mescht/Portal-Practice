@@ -1,6 +1,8 @@
 scoreboard players reset @p reset
 scoreboard players set in_lobby vars 0
 
+title @a times 5 30 5
+
 spawnpoint @a 0 16 32
 
 kill @e[type=egg]
