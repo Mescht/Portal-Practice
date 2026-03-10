@@ -1,9 +1,10 @@
-scoreboard players reset @p reset
+scoreboard players reset @a reset
+scoreboard players reset @a drop_iron_pick
+scoreboard players reset @a drop_gold_pick
 scoreboard players set in_lobby vars 0
 
-title @a times 5 30 5
-
 spawnpoint @a 0 16 32
+difficulty easy
 
 kill @e[type=egg]
 tp @e[type=chicken] 0 -200 0
@@ -37,8 +38,12 @@ execute if score current_level vars matches 10 run schedule function portal:port
 # load inventory
 execute as @p run function portal:inventory/loadinv
 
+# prepare timer
 scoreboard players set timer timer 0
 scoreboard players set active timer 0
 
 execute store result score pb timer run data get storage portal:levels levels[{selected:1b}].structures[{selected:1b}].pb
-execute unless data storage portal:levels levels[{selected:1b}].structures[{selected:1b}].pb run scoreboard players set pb timer 1728999
+title @a actionbar {"text":""}
+
+scoreboard players set compare timer_diff 0
+execute if score timer settings matches 1 run scoreboard players operation compare timer_diff = pb timer

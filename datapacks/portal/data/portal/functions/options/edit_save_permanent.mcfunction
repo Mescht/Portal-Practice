@@ -1,4 +1,4 @@
-data modify block 0 15 29 mode set value "SAVE"
+data merge block 0 15 29 {mode:"SAVE",mirror:"NONE",posX:-10}
 
 tp @a 0.5 16.00 30.5 -180 58
 gamemode creative @a

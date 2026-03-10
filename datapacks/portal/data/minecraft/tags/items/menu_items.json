@@ -17,6 +17,7 @@
         "minecraft:iron_pickaxe",
         "minecraft:netherite_scrap",
         "minecraft:crying_obsidian",
-        "minecraft:lava_bucket"
+        "minecraft:lava_bucket",
+        "minecraft:clock"
     ]
 }

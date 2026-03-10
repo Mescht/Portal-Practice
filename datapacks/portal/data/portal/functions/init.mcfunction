@@ -1,2 +1,2 @@
-title @a times 5 30 5
 function portal:misc/signs
+schedule function portal:post_init 5t

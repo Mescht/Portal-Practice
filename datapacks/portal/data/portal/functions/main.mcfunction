@@ -1,3 +1,4 @@
+# run timer
 execute if score in_lobby vars matches 0 unless score current_level vars matches 10 run function portal:timer/timer
 
 # check if player is inside portal
@@ -6,6 +7,11 @@ execute as @a at @s if block ~ ~ ~-0.3 nether_portal run scoreboard players set 
 execute as @a at @s if block ~ ~ ~0.3 nether_portal run scoreboard players set in_portal vars 1
 execute as @a at @s if block ~-0.3 ~ ~ nether_portal run scoreboard players set in_portal vars 1
 execute as @a at @s if block ~0.3 ~ ~ nether_portal run scoreboard players set in_portal vars 1
+
+execute as @a at @s if block ~ ~1 ~-0.3 nether_portal run scoreboard players set in_portal vars 1
+execute as @a at @s if block ~ ~1 ~0.3 nether_portal run scoreboard players set in_portal vars 1
+execute as @a at @s if block ~-0.3 ~1 ~ nether_portal run scoreboard players set in_portal vars 1
+execute as @a at @s if block ~0.3 ~1 ~ nether_portal run scoreboard players set in_portal vars 1
 
 execute if score in_portal vars matches 1 unless score current_level vars matches 10 run function portal:finish
 
@@ -16,7 +22,7 @@ execute if score in_portal vars matches 1 run scoreboard players add in_portal_t
 execute if score in_portal vars matches 0 run scoreboard players reset in_portal_time vars
 
 execute in minecraft:the_end as @a[distance=0..] if score timer timer matches 20.. in minecraft:overworld run function portal:finish
-execute in minecraft:the_end run kill @e[distance=0..]
+execute in minecraft:the_end run kill @a[distance=0..]
 
 execute if score in_lobby vars matches 1 run scoreboard players set @a reset 0
 execute if score in_lobby vars matches 1 run scoreboard players set @a skip 0
@@ -24,9 +30,13 @@ execute if score in_lobby vars matches 1 run scoreboard players set @a skip 0
 # check if reset was triggered
 execute as @a[scores={reset=1..}] run function portal:reset
 execute as @a[scores={death=1..}] run function portal:reset
+execute as @a[scores={drop_iron_pick=1.., sneaking=1..}] run function portal:reset
+execute as @a[scores={drop_gold_pick=1.., sneaking=1..}] run function portal:reset
 
 # check if skip was triggered
 execute as @a[scores={skip=1..}] run function portal:skip
+execute as @a[scores={drop_iron_pick=1.., sneaking=0}] run function portal:skip
+execute as @a[scores={drop_gold_pick=1.., sneaking=0}] run function portal:skip
 
 execute if score in_lobby vars matches 1 run function portal:gui/gui
 
@@ -35,3 +45,10 @@ execute if score in_lobby vars matches 0 if data storage portal:levels levels[{s
 execute if score nightvision settings matches 1 run effect give @a minecraft:night_vision 60 0 true  
 
 execute in minecraft:the_nether as @a[distance=0..] run function portal:portalbreak/nether
+
+# reset sneaking score
+scoreboard players set @a sneaking 0
+
+# repair lobby
+scoreboard players enable @a repair
+execute if entity @a[scores={repair=1..}] run function portal:misc/repair

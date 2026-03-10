@@ -1,6 +1,5 @@
 
 /advancements
-data/raids.dat
 /DIM-1
 /DIM1
 /playerdata
@@ -9,3 +8,6 @@ level.dat_old
 make_release.py
 /.releases
 session.lock
+data/raids.dat
+data/rng.dat
+/speedrunigt

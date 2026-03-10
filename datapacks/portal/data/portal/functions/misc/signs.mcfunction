@@ -1,3 +1,5 @@
+fill -1 18 29 1 16 29 air
+
 # start
 setblock 0 33 2 minecraft:oak_wall_sign[facing=north]{Color:"black",Text4:'{"text":""}',Text3:'{"text":""}',Text2:'{"color":"gold","clickEvent":{"action":"run_command","value":"function portal:start"},"text":"Start"}',Text1:'{"text":""}'}
 
@@ -14,10 +16,13 @@ setblock 0 17 29 minecraft:oak_wall_sign[facing=south]{Color:"black",Text4:'{"te
 setblock 0 18 29 minecraft:oak_wall_sign[facing=south]{Color:"black",Text4:'{"text":""}',Text3:'{"text":""}',Text2:'{"color":"yellow","clickEvent":{"action":"run_command","value":"function portal:options/menu"},"text":"Options"}',Text1:'{"text":""}'}
 
 # daytime
-setblock -1 34 -2 minecraft:oak_wall_sign[facing=south]{Text2:'{"text":"Change Daytime","color":"gold","clickEvent":{"action":"run_command","value":"time add 1000"}}'} replace
+setblock 0 33 -2 minecraft:oak_wall_sign[facing=south]{Text2:'{"text":"Change Daytime","color":"gold","clickEvent":{"action":"run_command","value":"time add 1000"}}'} replace
 
 # firetick
 setblock 0 34 -2 minecraft:oak_wall_sign[facing=south]{Color:"black",Text4:'{"text":""}',Text3:'{"color":"green","text":"True"}',Text2:'{"color":"gold","clickEvent":{"action":"run_command","value":"function portal:misc/toggle_firetick"},"text":"Fire Tick"}',Text1:'{"text":""}'}
 
 # nightvision
 setblock 1 34 -2 minecraft:oak_wall_sign[facing=south]{Color:"black",Text4:'{"text":""}',Text3:'{"color":"green","text":"True"}',Text2:'{"color":"gold","clickEvent":{"action":"run_command","value":"function portal:misc/toggle_nightvision"},"text":"Night Vision"}',Text1:'{"text":""}'}
+
+# firetick
+setblock -1 34 -2 minecraft:oak_wall_sign[facing=south]{Color:"black",Text4:'{"text":""}',Text3:'{"color":"yellow","text":"Timer Only"}',Text2:'{"color":"gold","clickEvent":{"action":"run_command","value":"function portal:misc/toggle_timer"},"text":"Timer Display"}',Text1:'{"text":""}'}
