@@ -1,5 +1,5 @@
 execute positioned 0 33 0 run kill @e[distance=..10,type=!player]
-setblock 0 31 0 minecraft:structure_block[mode=load]{ignoreEntities:0b,mirror:"NONE",rotation:"NONE",mode:"LOAD",posX:-5,posY:1,posZ:-5,name:"minecraft:lobby"}
+setblock 0 31 0 minecraft:structure_block[mode=load]{ignoreEntities:0b,mirror:"NONE",rotation:"NONE",mode:"LOAD",posX:-5,posY:1,posZ:-5,name:"portal:lobby"}
 setblock 0 30 0 redstone_block
 fill 0 31 0 0 30 0 air
 
