@@ -28,15 +28,15 @@ execute if score in_lobby vars matches 1 run scoreboard players set @a reset 0
 execute if score in_lobby vars matches 1 run scoreboard players set @a skip 0
 
 # check if reset was triggered
-execute as @a[scores={reset=1..}] run function portal:reset
-execute as @a[scores={death=1..}] run function portal:reset
-execute as @a[scores={drop_iron_pick=1.., sneaking=1..}] run function portal:reset
-execute as @a[scores={drop_gold_pick=1.., sneaking=1..}] run function portal:reset
+execute as @a[scores={reset=1..}] unless score in_lobby vars matches 1 run function portal:reset
+execute as @a[scores={death=1..}] unless score in_lobby vars matches 1 run function portal:reset
+execute as @a[scores={drop_iron_pick=1.., sneaking=1..}] unless score in_lobby vars matches 1 run function portal:reset
+execute as @a[scores={drop_gold_pick=1.., sneaking=1..}] unless score in_lobby vars matches 1 run function portal:reset
 
 # check if skip was triggered
-execute as @a[scores={skip=1..}] run function portal:skip
-execute as @a[scores={drop_iron_pick=1.., sneaking=0}] run function portal:skip
-execute as @a[scores={drop_gold_pick=1.., sneaking=0}] run function portal:skip
+execute as @a[scores={skip=1..}] unless score in_lobby vars matches 1 run function portal:skip
+execute as @a[scores={drop_iron_pick=1.., sneaking=0}] unless score in_lobby vars matches 1 run function portal:skip
+execute as @a[scores={drop_gold_pick=1.., sneaking=0}] unless score in_lobby vars matches 1 run function portal:skip
 
 execute if score in_lobby vars matches 1 run function portal:gui/gui
 
