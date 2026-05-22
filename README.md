@@ -2,18 +2,16 @@
 
 Map to practice different portal types designed for speedrunners
 
-Minecraft version 1.16+
+Minecraft version 1.16.1
 
 ## Features
 - Timer
-- Portal Selection Menu
 - Fully Customizable Loadouts
 - Multiple Variants for Each Portal
 - Randomizer Mode
-- Enable / Disabled Individual Portals and Variants from Randomizer
 - Editig Mode for Custom Structures
-- Personal Bests
 - Randomizable Crying Obsidian for Ruined Portals
+- Portal Break Practice
 
 ## Images
 ### Selection Menu
