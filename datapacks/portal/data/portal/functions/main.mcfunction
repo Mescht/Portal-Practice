@@ -52,3 +52,7 @@ scoreboard players set @a sneaking 0
 # repair lobby
 scoreboard players enable @a repair
 execute if entity @a[scores={repair=1..}] run function portal:misc/repair
+
+# importer
+scoreboard players enable @a import
+execute if entity @a[scores={import=1..}] run function portal:importer/import

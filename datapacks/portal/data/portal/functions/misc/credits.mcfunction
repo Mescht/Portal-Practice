@@ -1,4 +1,4 @@
 tellraw @a [{"text":"Map made by ","color":"gold"},{"text":"Mescht","color":"yellow"}]
-tellraw @a {"text":"Version 1.4.0","color":"gold"}
-tellraw @a [{"text":"\nThanks to ", "color":"gold"},{"text":"Semperzz","color":"yellow"},{"text":" and ","color":"gold"},{"text":"Llama","color":"yellow"},{"text":".\nTheir maps helped me a lot in making this.\n","color":"gold"}]
-tellraw @a {"text":"[More info]","color":"gold","clickEvent":{"action":"open_url","value":"https://github.com/Mescht/Portal-Practice"}}
+tellraw @a [{"text":"Version ","color":"gold"},{"text":"1.4.1","color":"yellow"}]
+tellraw @a {"text":"\n[More info]","color":"gold","clickEvent":{"action":"open_url","value":"https://github.com/Mescht/Portal-Practice"}}
+tellraw @a {"text":"[Support this Project]","color":"gold","clickEvent":{"action":"open_url","value":"https://ko-fi.com/mescht"}}
