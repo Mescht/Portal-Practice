@@ -23,3 +23,10 @@ Minecraft version 1.16.1
 ## Known Issues
 - lighting issues when not using night vision
 
+## Import Loadouts, PBs and Settings
+To import your data from an older version of the map follow these steps:
+- in `.minecraft\saves` find the old version of the map and open the `data` folder within it
+- make a copy of the file  `command_storage_portal.dat` and rename the copy to `command_storage_portal_import.dat`
+- copy the file `command_storage_portal_import.dat` from the old map to the new one
+  - *For example copy the file from `.minecraft\saves\Portal-Practice v1.2.1\data\` to `.minecraft\saves\Portal-Practice v1.4.1\data\`*
+- open the new map in minecraft and run the command `/trigger import`
