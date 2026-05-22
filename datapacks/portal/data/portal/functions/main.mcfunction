@@ -55,4 +55,4 @@ execute if entity @a[scores={repair=1..}] run function portal:misc/repair
 
 # importer
 scoreboard players enable @a import
-execute if entity @a[scores={import=1..}] run function portal:importer/import
+execute if entity @a[scores={import=1..}] run function portal:importer/pre_check

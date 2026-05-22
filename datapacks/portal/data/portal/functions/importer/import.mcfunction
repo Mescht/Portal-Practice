@@ -9,7 +9,6 @@ data modify storage portal:levels levels set from storage portal:importer new_le
 function portal:gui/main_menu/load
 
 scoreboard players reset compare vars
-scoreboard players reset * import
 
 #data remove storage portal:importer new_levels
 #data remove storage portal:importer imported_levels
